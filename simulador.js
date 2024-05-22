@@ -106,7 +106,7 @@ function imprimeNotaFiscal() {
   var endereco = "Rua das Flores, 123";
   var cidade = "Rio de Janeiro";
   var data = new Date().toLocaleDateString();//data aualizada pelo sistema
-  var numero = Math.random(); //número aleatório da nota fiscal 
+  var numero = parseInt(Math.random() * (50 - 1) + 1); //número aleatório da nota fiscal 
   
   var mensagem = 
   `                 NOTA FISCAL                
